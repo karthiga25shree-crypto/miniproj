@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SmartPark | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🚗 SmartPark</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="parking.html">Parking Slots</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="page-title">
+
+        <p class="tag">SMARTPARK</p>
+
+        <h1>Parking Dashboard</h1>
+
+        <p>
+            Enter parking information to calculate
+            current occupancy.
+        </p>
+
+    </div>
+
+
+    <section class="input-section">
+
+        <div class="section-title">
+
+            <p>UPDATE PARKING</p>
+
+            <h2>Enter Parking Information</h2>
+
+        </div>
+
+
+        <div class="input-card">
+
+            <div class="input-group">
+
+                <label>Total Parking Spaces</label>
+
+                <input
+                    type="number"
+                    id="totalInput"
+                    value="50"
+                    min="1"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Available Spaces</label>
+
+                <input
+                    type="number"
+                    id="availableInput"
+                    value="14"
+                    min="0"
+                >
+
+            </div>
+
+
+            <button id="updateButton">
+                Update Parking
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="stats">
+
+
+        <div class="stat-card">
+
+            <div class="icon blue">🅿️</div>
+
+            <div>
+                <p>Total Spaces</p>
+                <h2 id="totalSpaces">50</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="icon red">🚘</div>
+
+            <div>
+                <p>Occupied</p>
+                <h2 id="occupiedSpaces">36</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="icon green">✓</div>
+
+            <div>
+                <p>Available</p>
+                <h2 id="availableSpaces">14</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="icon purple">📊</div>
+
+            <div>
+                <p>Occupancy Rate</p>
+                <h2 id="occupancyRate">72%</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="occupancy-card">
+
+        <div class="occupancy-header">
+
+            <div>
+
+                <h3>Current Occupancy</h3>
+
+                <p>
+                    Parking lot utilization
+                </p>
+
+            </div>
+
+            <strong id="occupancyText">
+                72%
+            </strong>
+
+        </div>
+
+
+        <div class="progress">
+
+            <div
+                class="progress-fill"
+                id="progressFill">
+            </div>
+
+        </div>
+
+
+        <div class="progress-labels">
+
+            <span>0% Empty</span>
+
+            <span>100% Full</span>
+
+        </div>
+
+    </section>
+
+
+    <div class="next-buttons">
+
+        <a href="analysis.html"
+           class="button">
+            Go to Analysis →
+        </a>
+
+        <a href="parking.html"
+           class="button secondary">
+            View Parking Slots →
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        <h3>🚗 SmartPark</h3>
+
+        <p>
+            Parking Space Occupancy Analysis
+        </p>
+
+    </div>
+
+    <p>
+        Mini Project © 2026
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
